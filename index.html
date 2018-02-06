@@ -1,0 +1,150 @@
+
+    
+
+<!-- This source is modified from this project source, cited here: view-source:https://sureshlodha.github.io/CMPS165_Fall2016_FinalProjects/ASEAN/  -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css"/>
+		<script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+		<script src="https://d3js.org/topojson.v1.min.js"></script>
+		
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">    
+	</head>
+	<body>
+        <div class = "container" style="text-align:center">
+          <div class="page-header">
+              <h1>Malware in the Wild</h1>
+          </div>
+          <p>
+             Although vaguely known to the public, Malware presents a substantial and growing risk to systems around the world. Every year, Malware costs private individuals and companies millions of dollars both in lost data and system down time. This presentation  aims to educate the general public regarding the dangers of clicking a "simple link."  
+          </p>
+		  
+<!--
+           <div class = "row">
+               <!-\-http://stackoverflow.com/questions/23765925/cant-insert-a-d3-chart-on-a-bootstrap-div\-\->
+                <div class = "col-md-10">
+                    <svg width="980" height="600" id="countrysvg"></svg>
+                </div>
+                <script>
+                    var projection = {
+	                   center: [3, 9],
+                        rotate: [-109, 0, 0],
+                        parallels: [-12, 30],
+                        scale: 700
+                    };
+                    display(projection, 1);
+               </script>
+                <div class="col-md-2">
+                  <h4>Change map variable*:</h4>
+                   <div class="btn-group-vertical" style="width:180px">
+                       
+                       <button id="buttongroup" type="button" class="btn btn-success" onclick="display(projection,1)"> Human Development Index</button>
+                        
+                        <button id="buttongroup" type="button" class="btn btn-info" onclick="display(projection,2)">Gross National Income</button>
+                        
+                        <button id="buttongroup" type="button" class="btn btn-warning" onclick="display(projection,3)">Life Expectancy</button>
+                        
+                        <button id="buttongroup" type="button" class="btn btn-danger" onclick="display(projection,4)">Years of Schooling</button>
+                        
+                        <script src="index.js"></script>
+                    <br><br><br>
+                    <br><br>
+                    <h4>Generate line graph:</h4>
+                    <div class="dropdown">
+                          <button class="btn btn-primary dropdown-toggle" id="choose-variable" style="width:180px" type="button" data-toggle="dropdown">Choose a variable
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu" style="width:180px">
+                                <li><a href="Multiline.html">HDI</a></li>
+                                <!-\-<li><a href="Multiline.html">HDI</a></li>-->
+                                <!--onClick="setValHDI(); return false;"-->
+                                <!--<script>function setVal(){setValGNI(); console.log("works");}</script>-\->
+                                <li><a href="MultilineGNI.html">GNI</a></li>
+                                <li><a href="MultilineLife.html">Life Expectancy</a></li>
+                                <li><a href="MultilineSchool.html">Years of Schooling</a></li>
+                          </ul>
+                    </div>
+                    </div> 
+                </div>
+            </div>
+            <br/>
+            <svg width="400" height="15">
+              <rect x="50" y="20" width="150" height="70"
+                    style="fill:blue;stroke:pink;stroke-width:5;opacity:0" /></svg>
+            <p id="myAllign"> 
+                *The Human Development Index is composed of gross national income (GNI) per capita, 
+                                life expectancy,
+                                and mean years of schooling.</p>
+            <svg width="400" height="50">
+              <rect x="50" y="20" width="150" height="70"
+              style="fill:blue;stroke:pink;stroke-width:5;opacity:0" />
+            </svg>
+        </div>
+-->
+        <div class = "page-footer">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-md-12">
+                            <h4 style="font-weight: bold"><br/>Created by</h4>
+                                <p id="myParagraph">
+                                    Staunton Sample   
+                                </p>
+                            <h4 style="font-weight: bold"><br/>Designed for</h4>
+                                <p id="myParagraph">CMPS 263: Data Visualization, Winter 2018</p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "container">
+                   <br/>
+                    <div class = "row">
+                        <div class = "col-md-2">
+                            <h4 style="font-weight: bold">Files</h4>
+                            
+                                <p id="myParagraph">
+                                    index.html <br/>
+                                    index.css
+                                    inde.js
+                                </p>                       
+                        </div>
+                        <div class = "col-md-3">
+                            <h4 style="font-weight: bold">Code Sources</h4>
+                                <p id="myParagraph">
+                                    <a href="https://sureshlodha.github.io/CMPS165_Fall2016_FinalProjects/ASEAN/">Bootstrap Project Template</a>
+                                   <br/>
+                                <p> 
+                        </div>
+                        <div class = "col-md-5">
+                            <h4 style="font-weight: bold">Data Sources</h4>
+                                <p id="myParagraph">
+	                      
+	                                    <a href="https://community.blueliv.com/map/#">Active API for Malware by IP Address </a>
+                                
+                                     
+															
+                               
+	                                  
+	                                    <a href="">Economic Analysis of Bitcoin's Use of Electricity</a>
+                                    <a href="https://www.impactcybertrust.org/dataset_view?idDataset=609">Georgia Tech Daily Email collection</a>    
+									
+                                    
+                                    <a href="https://www.impactcybertrust.org/dataset_view?idDataset=719">MIT-LL Testing Results</a> <br>  <br/>
+									
+                                   <br>  <br/>
+								</p>
+									
+                        </div>
+                    </div>
+                    <svg width="400" height="30">
+              <rect x="50" y="20" width="150" height="70"
+              style="fill:blue;stroke:pink;stroke-width:5;opacity:0" />
+            </svg>
+                </div>
+            </div>
+	</body>
+</html>
